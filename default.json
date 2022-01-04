@@ -1,0 +1,21 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":preserveSemverRanges",
+    ":semanticCommitsDisabled",
+    ":dependencyDashboard"
+  ],
+
+  "timezone": "Europe/Berlin",
+  "schedule": [ "after 9am and before 5pm on Mon to Fri" ],
+  "labels": [ "renovate" ],
+  "enabledManagers": [ "sbt" ],
+  "separateMajorMinor": false,
+  "packageRules": [
+    {
+      "groupName": ["all"],
+      "automerge": true
+    }
+  ]
+}
