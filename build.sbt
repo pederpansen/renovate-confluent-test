@@ -1,4 +1,4 @@
-scalaVersion := "2.13.7"
+scalaVersion := "2.13.8"
 
 resolvers += DefaultMavenRepository
 resolvers += "Confluent Maven Repo" at "https://packages.confluent.io/maven/"
