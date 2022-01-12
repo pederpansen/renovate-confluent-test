@@ -16,6 +16,13 @@
     {
       "groupName": ["all"],
       "automerge": true
+    },
+    {
+      "matchDatasources": ["sbt-package"],
+      "matchPackagePrefixes": ["io.confluent"],
+      "registryUrls": [
+        "https://packages.confluent.io/maven/"
+      ]
     }
   ]
 }
