@@ -13,6 +13,7 @@ However, no updates are found. There seems to be an issue with this specific Mav
 
 # Relevant Logs from Renovate Bot
 
+The relevant Confluent dependencies are not found:
 
 ```
 DEBUG: Looking up org.scala-lang:scala-library in repository https://repo.maven.apache.org/maven2/
@@ -119,3 +120,40 @@ DEBUG: packageFiles with updates
   }
 }
 ```
+
+HTTP statistics:
+
+```
+http statistics
+{
+  "urls": {
+    "https://api.github.com/graphql (POST)": 4,
+    "https://api.github.com/repos/pederpansen/renovate-confluent-test/contents/default.json (GET)": 1,
+    "https://api.github.com/repos/pederpansen/renovate-confluent-test/contents/renovate.json5 (GET)": 1,
+    "https://api.github.com/repos/pederpansen/renovate-confluent-test/issues/1 (GET)": 2,
+    "https://api.github.com/repos/pederpansen/renovate-confluent-test/pulls (GET)": 1,
+    "https://api.github.com/repos/whitesource/merge-confidence/contents/beta.json (GET)": 1,
+    "https://packages.confluent.io/maven/io/confluent/ (GET)": 1,
+    "https://repo.maven.apache.org/maven2/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8.pom (GET)": 1
+  },
+  "hostStats": {
+    "api.github.com": {
+      "requestCount": 10,
+      "requestAvgMs": 212,
+      "queueAvgMs": 0
+    },
+    "packages.confluent.io": {
+      "requestCount": 1,
+      "requestAvgMs": 88,
+      "queueAvgMs": 0
+    },
+    "repo.maven.apache.org": {
+      "requestCount": 1,
+      "requestAvgMs": 34,
+      "queueAvgMs": 0
+    }
+  },
+  "totalRequests": 12
+}
+```
+
