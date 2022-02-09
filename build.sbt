@@ -5,7 +5,7 @@ resolvers += "Confluent Maven Repo" at "https://packages.confluent.io/maven/"
 
 libraryDependencies ++= {
 
-  val confluentVersion = "6.0.2"
+  val confluentVersion = "7.0.1"
 
   Seq(
     "io.confluent"                % "kafka-avro-serializer"    % confluentVersion,
